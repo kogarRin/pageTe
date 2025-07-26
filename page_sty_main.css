@@ -1,0 +1,197 @@
+div.content {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+/* LEFT SIDE NAVIGATION */
+.left_container {
+    width: 20vw;
+   width: 20vw;
+   height: 100%;
+}
+
+.leftcontentList{
+    width: 8em;
+    height: 23em;
+    margin-top: 4em;
+    margin-left: 7em;
+    background-color: rgb(149, 170, 163);
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.leftcontentList ul li{
+    list-style-position: inside;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    text-align: left;
+}
+
+.leftcontentList li::marker{
+    color: rgba(112, 16, 88, 0.548);
+    font-size: 1.3em;
+    content: circle;
+}
+
+.leftcontentList li a{
+    color: black;
+    text-decoration: none;
+}
+
+.leftcontentList li a:hover{
+    color: rgba(212, 13, 23, 0.76);
+}
+/*左侧导航*/
+
+/*右侧内容*/
+.right_container{
+    position: relative;
+    width: 62%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.rightcontentList{
+    position: absolute;
+    top: 3.6em;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightContent{
+    background-color: rgba(250, 235, 215, 0);
+    border: .2em solid rgb(80 64 30 / 6%);
+    border-radius: .4em;
+    margin-bottom: 1em;
+}
+
+.rightcontent_item{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: .1em;
+    margin-left: .5em;
+}
+
+img{
+    float: left;
+}
+
+.rightcontent_item a{
+    background-color: rgb(246, 246, 246);
+    margin-bottom: .3em;
+    margin-left: .5em;
+    margin-right: .5em;
+    padding: .5em;
+    width: 28%;
+    border-radius: .5em;
+    height: auto;
+}
+
+.rightcontent_item a:hover{
+    background-color: rgba(184, 181, 182, 0.26);
+    transition: font-size 0.3s ease-in-out;
+}
+
+.upTitle{
+    margin-left: 1.6em;
+    margin-bottom: .2em;
+    font-size: 1em;
+    color:black;
+}
+
+.beforeupTitle::before{
+    content: "\27A4";
+}
+
+.downTitle{
+    font-size: .8em;
+    margin-bottom: .2em;
+}
+
+strong{
+    font-size: .9em;
+}
+
+.rightcontent_item a:hover strong{
+    color: black;
+}
+
+.imgA{
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    height: 2rem; 
+    width: 2rem;
+}
+/*右侧内容*/
+
+.show{
+    display: block !important;
+}
+
+#registerContainer{
+    display: none;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    background-color: rgb(247, 248, 248);
+    transform: translate(-50%, -50%);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 9rem rgba(0, 0, 0, 0.61);
+}
+
+#registerContainer table{
+    padding-left: .5rem;
+}
+
+#registerContainer label{
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 1.1rem;
+}
+
+#registerContainer input{
+    width: 97%;
+    padding: .5rem;
+    border-radius: .3rem;
+    box-shadow: inset 0 0 .1rem rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+#registerContainer #codeBtn{
+    padding: .5rem;
+}
+
+#registerContainer td{
+    text-align: right;
+}
+
+#registerContainer .buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer div{
+    margin-left: 3rem;
+}
+
+#registerContainer button{
+    background-color: rgb(235, 235, 238);
+    margin-left: .5rem;
+    border-radius: .3rem;
+    padding: .5rem 1rem;
+    border: none;
+}
+
+#registerContainer button:hover{
+    background-color: rgb(90, 147, 233);
+}

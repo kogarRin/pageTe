@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(128 128 128 / 16%);
+    color: white;
+    font-size: 16px;
+}
+
+
+.site_name_link{
+    color: rgb(72, 124, 59);
+    transition: all 0.2s ease-in-out;
+}
+.site_name_link:hover{
+    color: rgb(129, 122, 194);
+    text-shadow: 2px 0px 1vh rgb(129, 122, 194);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(30, 3, 34);
+}
+
+.rowTop{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(61, 75, 75, 0.877);
+}
+
+.site_name{
+   font-size: 3rem;
+   margin-top: 0.1rem;
+   padding-left: 2rem;
+   width: 35%;
+   display: block;
+}
+
+.search_bar{
+    width: 24.8%;
+}
+
+.search_input{
+    border: none;
+    border-radius: 2.4rem;
+    margin-top: .5rem;
+    height: 1.4rem;
+    padding: 1rem;
+    width: 90%;
+    transition: all 0.2s ease-in-out;
+}
+
+.search_input:focus{
+    outline: solid 3px rgb(129, 122, 194);
+    box-shadow: 0px 0px 1vh rgb(129, 122, 194);
+}
+
+.search_button{
+    width: 13%;
+}
+
+.search_button_input{
+   width: 4rem;
+   height: 2rem;
+   border-radius: 6px;
+   margin-top: 1.5rem;
+   font-size: 1.1rem;
+   background-color: rgb(190, 160, 178);
+   border: none;
+   transition: all 0.2s ease-in-out;
+}
+
+.search_button_input:hover{
+    background-color: rgb(129, 122, 194);
+    transform: translateY(-0.5vh);
+}
+
+::placeholder{
+    position: absolute;
+    left: 1rem;
+}
+
+/*登录部分start*/
+.userLoginContainer{
+    display: flex;
+    height: 27.2px;
+    padding-top: 2rem;
+}
+
+.fa-user-circle:before {
+    content: "\f2bd";
+    font-size: 1.7rem;
+    color: white;
+}
+
+.userLoginIcon{
+    position: relative;
+    height: 27.2px;
+    width: 27.2031px;
+    padding-right: .6rem;
+    padding-bottom: 5px;
+}
+
+.userLoginContainer a{
+    padding-right: .6rem;
+}
+
+.userLoginIcon:hover .userPersonalDropArrow{ 
+    position: absolute;
+    top: 100%;
+    left: -70%;
+    width: 0;
+    height: 0;
+    border-left: 2.5rem solid transparent;
+    border-right: 2.5rem solid transparent;
+    border-bottom: 1.5rem solid  white;
+    margin-top: 0rem;
+    z-index: 99;
+}
+
+.userPersonalDrop{
+    visibility: hidden; 
+    height: 1rem;
+}
+
+.userLoginIcon:hover .userPersonalDrop{
+    display: flex;
+    visibility: visible;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 113%;
+    left: -145%;
+    margin-top: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.1rem;
+    padding-bottom: .9rem;
+    border-radius: .5rem;
+    z-index: 99;
+    height: 9rem;
+    background-color: rgb(255, 253, 254);
+    box-shadow: 0px 0px 3vh rgba(0, 0, 0, 0.2);
+    transition: height 140ms ease-in-out;
+}
+
+.userPersonalDrop a{
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+
+.userPersonalDrop a:hover{
+    text-shadow: 0 0 1vh rgb(85, 76, 165);
+}
+
+#userLoginBtn{
+    font-size: 1.1rem;
+    padding: .1rem;
+    color: rgb(12, 14, 22);
+    background-color: transparent;
+    border: none;
+}
+
+#userLoginBtn:hover{
+    color: rgb(164, 160, 202);
+}
+
+#userRegisterBtn{
+    font-size: 1.1rem;
+    padding: .1rem;
+    color: rgb(12, 14, 22);
+    background-color: transparent;
+    border: none;
+}
+
+#userRegisterBtn:hover{
+    color: rgb(164, 160, 202);
+}
+
+/*登录部分end*/
+
+.EastEgg{
+    padding-left: 4rem;
+}
+
+.EastEggButton{
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    padding-top: 2.2rem;
+}
+
+.EastEggButton:hover{
+    color: rgb(129, 122, 194);
+    transition: all 0.2s ease-in-out;
+}
+
+
+/*导航栏部分start*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(216, 167, 104, 0.37);
+}
+
+.nav_menu_List{
+    display: flex;
+}
+
+.nav_menu_List li{
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.navbar_menu ul a{
+    color: rgb(66, 65, 65);
+}
+
+.navbar_menu ul a:hover{
+    color: black;
+}
+
+.downdropList{
+    position: relative;
+}
+
+.downdropList .downdropContent{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 0;
+    border-radius: .4rem;
+    overflow: hidden;
+    background-color: rgb(226, 207, 163);
+}
+
+.downdropList:hover{
+    border-radius: .7rem;
+    background-color: rgb(230, 202, 139);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.downdropList:hover .downdropContent{
+    height: auto;
+    width: max-content;
+    z-index: 99;
+}
+
+.downdropContent li:hover {
+    background-color: rgb(199, 202, 206);
+    border-radius: .4rem;
+}
+
+/*导航栏部分end*/

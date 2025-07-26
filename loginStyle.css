@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: headerAni 5s ease-in-out .1s infinite alternate;
+    box-shadow: 0 0 .6rem;
+    border-radius: .1rem;
+}
+
+@keyframes headerAni{
+    0% {background: rgba(135, 175, 212, 0.795);}
+    50% {background: rgba(48, 108, 219, 0.5);}
+    100% {background: rgba(69, 143, 212, 0.795);}
+}
+
+#header a{
+    padding: 3rem;
+    font-size: 3rem;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+}
+
+#header a:hover{
+    text-shadow: 0 0 .12rem rgb(30, 30, 31);
+    color: rgb(30, 30, 31);
+    transition: all .2s ease-in-out;
+}
+
+.loginContainer{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50vh;
+    left: 50vw;
+    padding: 0rem 2.5rem 0 2.5rem;
+    background-color: rgb(247, 248, 248);
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    box-shadow: 0 0 7rem rgba(91, 94, 112, 0.753);
+}
+
+.loginContainer #closeLogin{
+   position: relative;
+}
+
+#closeLogin i{
+    position: absolute;
+    right: -1rem;
+    color: black; 
+    font-size: 1.6rem;
+}
+
+.loginContainer form{
+    padding-top: 1.5rem;
+}
+
+.loginContainer label{
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 1.1rem;
+}
+
+#loginInput{
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.loginContainer input{
+    padding: .7rem 1rem;
+    border-radius: .7rem;
+    box-shadow:0 0 .5rem rgba(0, 0, 0, 0.37);
+    border: none;
+}
+
+.loginContainer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    padding: .5rem .5rem;
+}
+
+#checkContainer{
+    padding: 0;
+}
+
+#checkContainer p{
+    position: fixed;
+    top: 60%;
+    left: 15%;
+    margin: 0 0 0 .8rem;
+    font-size: small;
+    color: red;
+    visibility: hidden;
+}
+
+.buttonContainer{
+    margin-top: 2rem;
+}
+
+.buttonContainer button{
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 .1rem rgba(42, 99, 185, 0.507);
+    color: black;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+}
+
+.buttonContainer button:hover{
+    background-color: rgb(112, 161, 235);
+    transition: all 0.5s ease-in-out;
+}

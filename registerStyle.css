@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: headerAni 5s ease-in-out .1s infinite alternate;
+    box-shadow: 0 0 .6rem;
+    border-radius: .1rem;
+}
+
+@keyframes headerAni{
+    0% {background: rgba(135, 175, 212, 0.795);}
+    50% {background: rgba(48, 108, 219, 0.5);}
+    100% {background: rgba(69, 143, 212, 0.795);}
+}
+
+#header a{
+    padding: 3rem;
+    font-size: 3rem;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+}
+
+#registerContainer{
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    background-color: rgb(247, 248, 248);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 7rem rgba(91, 94, 112, 0.753);
+    border-radius: 1rem;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.formContainer div{
+    display: flex;
+    position: relative;
+    margin: .5rem 0;
+}
+
+i{
+    position: absolute;
+    top: 31%;
+    left: 4%;
+}
+
+input{
+    width: 12rem;
+    padding: .9rem .1rem .9rem 2rem;
+    border: none;
+    border-radius: .7rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.37);
+}
+
+#codeContainer input{
+    width: 99.8px;
+    margin-right: 1rem;
+}
+
+#codeContainer button{
+    border: none;
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-left: .2rem;
+    background-color: rgba(104, 149, 218, 0.247);
+}
+
+#codeContainer button:hover{
+    background-color: rgb(112, 161, 235);
+    transition: all 0.5s ease-in-out;
+}
+
+#bottomContainer{
+    margin: 1rem 0;
+    gap: .9rem;
+}
+
+#bottomContainer input{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 79px;
+}
+
+#bottomContainer input:hover{
+    background-color: rgb(112, 161, 235);
+    transition: all 0.5s ease-in-out;
+}
+
+p{
+    text-align: center;
+    font-size: .9rem;
+}
+
+a{
+    color: rgb(9, 76, 201);
+}
